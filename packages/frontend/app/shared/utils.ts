@@ -55,11 +55,6 @@ export function formatAmount(amount: string, scale: number) {
   return `${integerPart}.${fractionalPart}`
 }
 
-/**
- * Converts a user-entered decimal amount (e.g. "0.29") into asset base units
- * (e.g. 29n for scale 2) using string arithmetic, to avoid floating-point
- * precision errors.
- */
 export function parseAmount(
   input: string,
   scale: number
